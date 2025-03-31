@@ -27,17 +27,26 @@ export default function Home() {
   return (
     <Form id='waiters' form={form}>
       <InnerBlueContainer>
-        <Box sx={{ width: 0.1 }}>
-          <DatePickerInput fieldName='date' fieldLabel='date' />
-        </Box>
-        <Typography
+        <Box
           sx={{
-            fontSize: '14px',
-            fontWeight: '600'
+            width: 0.15,
+            display: 'flex',
+            flexDirection: 'row',
+            justifyContent: 'center',
+            alignItems: 'center',
+            gap: 2
           }}
         >
-          СМЕНА
-        </Typography>
+          <Typography
+            sx={{
+              fontSize: '14px',
+              fontWeight: '600'
+            }}
+          >
+            СМЕНА
+          </Typography>
+          <DatePickerInput fieldName='date' fieldLabel='date' />
+        </Box>
 
         <Box sx={{ display: 'flex', flexDirection: 'row', gap: 1, width: 0.8 }}>
           <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1, width: 0.3 }}>
@@ -47,7 +56,7 @@ export default function Home() {
               </Box>
               <Box sx={{ width: 0.7 }}>
                 <ControlFields
-                  fieldLabel='BARMEN'
+                  fieldLabel='barmen'
                   fieldName='waiters1'
                   options={dataNamePersonal?.map((name) => ({ value: name, label: name }))}
                 />
@@ -59,7 +68,7 @@ export default function Home() {
               </Box>
               <Box sx={{ width: 0.7 }}>
                 <ControlFields
-                  fieldLabel='WAITERS'
+                  fieldLabel='waiters'
                   fieldName='waiters2'
                   options={dataNamePersonal?.map((name) => ({ value: name, label: name }))}
                 />
@@ -71,7 +80,7 @@ export default function Home() {
               </Box>
               <Box sx={{ width: 0.7 }}>
                 <ControlFields
-                  fieldLabel='WAITERS'
+                  fieldLabel='waiters'
                   fieldName='waiters3'
                   options={dataNamePersonal?.map((name) => ({ value: name, label: name }))}
                 />
@@ -83,7 +92,7 @@ export default function Home() {
               </Box>
               <Box sx={{ width: 0.7 }}>
                 <ControlFields
-                  fieldLabel='WAITERS'
+                  fieldLabel='waiters'
                   fieldName='waiters4'
                   options={dataNamePersonal?.map((name) => ({ value: name, label: name }))}
                 />
@@ -95,7 +104,7 @@ export default function Home() {
               </Box>
               <Box sx={{ width: 0.7 }}>
                 <ControlFields
-                  fieldLabel='BARMEN'
+                  fieldLabel='barmen'
                   fieldName='waiters5'
                   options={dataNamePersonal?.map((name) => ({ value: name, label: name }))}
                 />
@@ -109,7 +118,7 @@ export default function Home() {
               </Box>
               <Box sx={{ width: 0.7 }}>
                 <ControlFields
-                  fieldLabel='BARMEN'
+                  fieldLabel='barmen'
                   fieldName='waiters6'
                   options={dataNamePersonal?.map((name) => ({ value: name, label: name }))}
                 />
@@ -121,7 +130,7 @@ export default function Home() {
               </Box>
               <Box sx={{ width: 0.7 }}>
                 <ControlFields
-                  fieldLabel='WAITERS'
+                  fieldLabel='waiters'
                   fieldName='waiters7'
                   options={dataNamePersonal?.map((name) => ({ value: name, label: name }))}
                 />
@@ -133,7 +142,7 @@ export default function Home() {
               </Box>
               <Box sx={{ width: 0.7 }}>
                 <ControlFields
-                  fieldLabel='WAITERS'
+                  fieldLabel='waiters'
                   fieldName='waiters8'
                   options={dataNamePersonal?.map((name) => ({ value: name, label: name }))}
                 />
@@ -145,7 +154,7 @@ export default function Home() {
               </Box>
               <Box sx={{ width: 0.7 }}>
                 <ControlFields
-                  fieldLabel='WAITERS'
+                  fieldLabel='waiters'
                   fieldName='waiters10'
                   options={dataNamePersonal?.map((name) => ({ value: name, label: name }))}
                 />
@@ -157,7 +166,7 @@ export default function Home() {
               </Box>
               <Box sx={{ width: 0.7 }}>
                 <ControlFields
-                  fieldLabel='WAITERS'
+                  fieldLabel='waiters'
                   fieldName='waiters11'
                   options={dataNamePersonal?.map((name) => ({ value: name, label: name }))}
                 />
